@@ -1,11 +1,15 @@
 package basic;
 
 public class Supervisor{
-    public static void main(String[] args) throws InterruptedException{
+    public static void main(String[] args){
       Worker1 worker1 = new Worker1();
       Worker2 worker2 =new Worker2();
-      worker1.executeWork();
-      worker2.executeWork();
+        try{
+            worker1.executeWork();
+        }catch(InterruptedException e){
+            e.printStackTrace();
+        }
+        worker2.executeWork();
     }
 }
 class Worker1{
