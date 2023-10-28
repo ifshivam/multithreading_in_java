@@ -2,7 +2,7 @@ package basic2;
 
 import java.util.stream.IntStream;
 
-public class SumOfNumbersUsingRunnableWithLambda {
+public class SumOfNumbersUsingRunnableWithLambda{
     public static int[] arr =IntStream.rangeClosed(0,5000).toArray();
     public static int total =IntStream.rangeClosed(0,5000).sum();
     public static int sum=0;
